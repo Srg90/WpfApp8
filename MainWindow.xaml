@@ -22,8 +22,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Menu Padding="5" Grid.Row="0" Background="#FF962D2D">
-            <MenuItem Header="_Файл" Foreground="DarkGoldenrod" FontWeight="Bold" BorderBrush="DarkGoldenrod">
+        <Menu Padding="5" Grid.Row="0" Style="{StaticResource MenuStyle}">
+            <MenuItem Header="_Файл" BorderBrush="DarkGoldenrod">
                 <MenuItem Header="_Открыть" Command="ApplicationCommands.Open">
                     <MenuItem.Icon>
                         <Image Source="Image/open.png"/>

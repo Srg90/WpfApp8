@@ -48,7 +48,6 @@ namespace WpfApp8
         }
         private void ClickBold(object sender, ExecutedRoutedEventArgs e)
         {
-            this.Resources["GridStyle"] = new SolidColorBrush(Colors.Azure);
             if (bold.IsChecked == true)
             {
                 textBox.FontWeight = FontWeights.Bold;
