@@ -4,8 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp8"
+        xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+        
     <Window.CommandBindings>
         <CommandBinding Command="local:CommandsWPF7.Close" Executed="Close"/>
         <CommandBinding Command="local:CommandsWPF7.Bold" Executed="ClickBold"/>
@@ -60,8 +63,8 @@
                 </LinearGradientBrush>
             </ToolBarTray.Background>
             <ToolBar Margin="5" Padding="5" Style="{StaticResource ToolBarStyle}">
-                <ComboBox x:Name="ComboFN" Margin="5" Padding="5" SelectedIndex="0" Width="200" SelectionChanged="Select1"/>
-                <ComboBox x:Name="ComboFS" Margin="5" Padding="5" SelectedIndex="4" Width="50" SelectionChanged="Select2"/>
+                <ComboBox x:Name="ComboFN" Margin="5" Padding="5" SelectedIndex="0" Width="200" SelectionChanged="Select1" ItemsSource="{StaticResource Fonts}"/>
+                <ComboBox x:Name="ComboFS" Margin="5" Padding="5" SelectedIndex="4" Width="50" SelectionChanged="Select2" ItemsSource="{StaticResource FontSize}"/>
             </ToolBar>
             <ToolBar Margin="5" Padding="5" Style="{StaticResource ToolBarStyle}">
                 <ToggleButton Command="local:CommandsWPF7.Bold" FontWeight="Bold" x:Name="bold">

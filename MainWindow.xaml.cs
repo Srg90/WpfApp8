@@ -25,8 +25,8 @@ namespace WpfApp8
         public MainWindow()
         {
             InitializeComponent();
-            ComboFN.ItemsSource = new string[5] { "Arial", "Times New Roman", "Verdana", "Comic Sans MS", "Gabriola" };
-            ComboFS.ItemsSource = new int[14] { 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72 };
+            //ComboFN.ItemsSource = new string[5] { "Arial", "Times New Roman", "Verdana", "Comic Sans MS", "Gabriola" };
+            //ComboFS.ItemsSource = new int[14] { 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72 };
         }
         private void Select1(object sender, SelectionChangedEventArgs e)
         {

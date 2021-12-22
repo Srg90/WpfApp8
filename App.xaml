@@ -9,6 +9,8 @@
                 <ResourceDictionary Source="Dictionary1.xaml"/>
                 <ResourceDictionary Source="Dictionary2.xaml"/>
                 <ResourceDictionary Source="Dictionary3.xaml"/>
+                <ResourceDictionary Source="DictionaryFonts.xaml"/>
+                <ResourceDictionary Source="DictionaryFontSize.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
